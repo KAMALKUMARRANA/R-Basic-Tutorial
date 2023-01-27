@@ -33,9 +33,11 @@ print(f5)
 x<-list(6,"monish",16000,"2018")
 print(rbind(emp.data,x))
 #print(emp.data)
+
 y<-c("Delhi","Kolkata","Rajastan","Goa","Mumbai")
 print(cbind(emp.data,address=y))
 print(emp.data)
+
 emp.data<-emp.data[-2,]
 print(emp.data)
 
@@ -43,3 +45,4 @@ emp.data$starting_date<-NULL
 print(emp.data)
 
 print(summary(emp.data))
+

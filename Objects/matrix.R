@@ -28,6 +28,7 @@ y[y==11]<-0
 print(y)
 
 #cbind() and rbind() are used to add a column and row respectively
+
 print(rbind(y,c(100,200,300)))
 print(y)
 print(cbind(y,c(10,20,30,40)))

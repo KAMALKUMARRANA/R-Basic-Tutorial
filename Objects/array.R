@@ -5,6 +5,7 @@ v1<-c(1,4,5)
 v2<-c(10,12,16,18,20,22,70,80)
 name<-array(c(v1,v2),dim=c(3,3,4))
 print(name)
+
 col_name<-c("c1","c2","c3")
 row_name<-c("r1","r2","r3")
 mat_name<-c("m1","m2")
