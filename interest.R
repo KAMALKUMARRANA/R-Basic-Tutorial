@@ -1,12 +1,14 @@
 simple<-function(p,t,r){
+ 
   int=(p*t*r)/100
+  
   print(paste("Simple interest is: ",int))
   
   
 }
 
 compound<-function(p,t,r){
-  int=(p*(1+r/100)**t)-p
+  int=(p*(1+r/100)^t)-p
   print(paste("Compound interest is: ",int))
   
   

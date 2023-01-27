@@ -1,4 +1,5 @@
-demo<-2+5;demo2<-3+7   #if in single  line
+demo<-2+5
+demo2<-3+7   #if in single  line
 print(demo)
 print(demo2)
 
@@ -59,7 +60,7 @@ num3
 num4<-as.numeric("add1233")
 num4
 
-num5<-as.numeric("12345") # covert only "1234"
+num5<-as.numeric("12345") # covert only "12345"
 num5
 ###########
 int1<-as.integer(52.67)

@@ -10,7 +10,9 @@ char<-c("ram","shyam","mohon")
 log<-c(TRUE,FALSE,TRUE)
 
 list1<-list(num,char,log)
+
 print(list1)
+print(list1[2][1])
 
 #naming of list
 

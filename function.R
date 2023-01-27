@@ -3,9 +3,13 @@
 name=readline(prompt = "Enter your name: ")
 age=readline("Enter your age: ")
 print(paste("Hello",name,"your age is:",age))
-paste("Hello","Ram",123,sep = "-") # concate string bydefault sep=" "
+paste("Hello","Ram",123,sep = "-") # concate string by default sep=" "
 paste0("Hello","Ram","123")
 cat("Hello","Ram",123)
+?paste
+paste("1st", "2nd", "3rd", collapse = ", ") # probably not what you wanted
+paste("1st", "2nd", "3rd", sep = ", ")
+
 
 # R function----->
 # fun_name<-function(arg1,arg2,arg3,....................){ fun_body}

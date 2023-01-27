@@ -1,5 +1,5 @@
 # if-else statement
-x<-25
+x<-25L
 if(is.integer(x)){
   print("X is an integer")
   
@@ -9,7 +9,7 @@ if(is.integer(x)){
 
 y<-c("HD","is","the","key","of","success")
 y
-if("key"%in%y){
+if("key" %in% y){
   print("Found")
 }else{
   print("Not found")
@@ -72,6 +72,7 @@ print("Hello")
   }
   a=a+1
 }
+print(a)
 
 # Loop---------------------------------------------->
 
@@ -90,7 +91,7 @@ v<-c("Hello","R","Programmingi","language")
 x<-2
 while(x<6)
 {
-  #print(v)
+  print(v)
   x=x+1
   
 }

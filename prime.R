@@ -1,12 +1,13 @@
 
 prime<-function(n){
 flag=0
-n
 
+if(n>1){
   for(i in 2:floor(n/2)){
   
     if(n%%i==0){
       flag=1
+      break
     
     }
    
@@ -18,12 +19,13 @@ if(flag==1){
 }else{
   #print(paste(n,"is  prime"))
   return(1)
+}
   
 }
 }
 
 
-for(n in 3:100){
+for(n in 1:100){
 if(prime(n)){
   print(n)
 }

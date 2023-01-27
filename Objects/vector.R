@@ -4,18 +4,24 @@
 #atomic vactor and list
 a<-c(1,2,3,4,6,TRUE)  
 print(a)
+
 b<-3:5
 print(b)
+
 c<-seq(3,10,by=0.5)
 print(c)
+
 d<-seq(3,10,length.out=5)
 print(d)
 
 #neumaric vector
 num<-c(1.6,3,4.5,10)
 print(num)
+print(class(num))
+
 num<-as.integer(num)
 print(class(num))
+print(num)
 
 char<-c('4','8','9',9,4,"midnapore",TRUE)
 print(class(char))
@@ -23,8 +29,10 @@ print(char)
 
 #Access
 #by indexing [] start from 1
+c<-seq(3,10,by=0.5)
 print(c)
 print(c[6])
+
 char_vec<-c("ram"=12,"shyam"=20,"mohon"=25)
 print(char_vec)
 print(char_vec["shyam"])
@@ -39,7 +47,7 @@ char<-c('4','8','9',9,4,"midnapore",TRUE)
 com<-c(num,char)
 print(com)
 
-a1<-c(1,2,3,4)
+a1<-c(1,2.5,3,4)
 a2<-c(4,3,2,1)
 print(a1+a2)
 print(a1-a2)
