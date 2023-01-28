@@ -9,14 +9,14 @@ apply(x,2,mean)
 
 x<-matrix(1:6,3,2)
 x
-apply(x,1,sum)
+apply(x,1,mean)
 
 
 
 # lapply(X,FUN) ->loop over a list (it return only list)
 x<-list(a=1:5,b=2:3)
 x
-print(lapply(x,mean))
+print(lapply(x,min))
 class(lapply(x,mean))
 
 a<-c("APPLE","GRAPE","BANANA")

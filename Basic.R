@@ -1,5 +1,4 @@
-demo<-2+5
-demo2<-3+7   #if in single  line
+demo<-2+5;demo2<-3+7   #if in single  line
 print(demo)
 print(demo2)
 
@@ -103,12 +102,14 @@ log1<-as.logical(0)
 log1
 log2<-as.logical(0+2i)
 log2
-log3<-as.logical("qwe321")
+log3<-as.logical("qwe321")# NA
 log3
-log4<-as.logical("1234")
+log4<-as.logical("1234")# NA
 log4
 
-
+v<-charToRaw("Hello")
+v
+print(class(v))
 
 # Operators------------------------------------>
 

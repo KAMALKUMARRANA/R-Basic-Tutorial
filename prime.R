@@ -1,23 +1,24 @@
 
 prime<-function(n){
 flag=0
-  if(n<2){
-    return(0)
-  }else{
-    for(i in 2:floor(n/2)){
-  
-    if(n%%i==0){
-     return(0)
-      }
-    }
+for(i in 2:(n-1)){
+  if((n%%i)==0){
+    flag=1
+    break
   }
-
-return(1)
+} 
+if(n==2){
+  flag=0
+}
+   
+    
+  
+if(flag==0){
+ print(n)
 }
 
 
-for(n in 1:100){
-if(prime(n)){
-  print(n)
 }
+for(i in 1:100){
+  prime(i)
 }

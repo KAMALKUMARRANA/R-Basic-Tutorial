@@ -1,7 +1,7 @@
 bubble_sort<-function(x){
   temp=0
   n=length(x)
-  print(n)
+  
   for(i in 1:n){
     for(j in 2:n){
       if (x[j-1] > x[j]){
@@ -33,24 +33,25 @@ print(x)
 }
 
 selection_sort<-function(x){
-  n=length(x)
-  for(i in 1:n){
-    min=i
-    for(j in (i+1:n)){
-      if (x[j]<x[min]){
-        min=j
+  n<-length(x)
+  print(n)
+  for(i in 1:(n-1)){
+    min<-i
+    for(j in (i+1):(n)){
+      if (x[min]>x[j]){
+        min<-j
       }
     }
-    temp=a[min]
-    a[min]=a[i]
-    a[i]=temp
+    temp<-a[i]
+    a[i]=a[min]
+    a[min]<-temp
   }
   print(x)
 
 }
 l<-c(10,20,30,10,-3,-5,89,90)
 
-
+s<-sample(1:100,10)
 bubble_sort(l)
-insertion_sort(l)
+insertion_sort(s)
 selection_sort(l)

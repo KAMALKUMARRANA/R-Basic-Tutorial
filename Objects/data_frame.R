@@ -45,4 +45,5 @@ emp.data$starting_date<-NULL
 print(emp.data)
 
 print(summary(emp.data))
+summary(1:6)
 

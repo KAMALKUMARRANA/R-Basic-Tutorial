@@ -15,6 +15,7 @@ ls<-function(a,key){
   
 }
 
+
 bs<-function(a,key){
   l=1
   u=length(a)
@@ -37,7 +38,7 @@ bs<-function(a,key){
 a=c(10,30,46,20)
 ls(a,20)
 a=c(10,20,30,50)
-x=bs(a,50)
+x=bs(a,20)
 if (x!=-1){
   print(paste("Found on location:",x))
 }else{
